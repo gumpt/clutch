@@ -78,3 +78,7 @@ message HPAName {
     },
   } ];
 }
+
+message Deployment {
+
+}

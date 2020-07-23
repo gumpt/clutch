@@ -15,9 +15,9 @@ func (a *k8sAPI) DescribePod(ctx context.Context, req *k8sapiv1.DescribePodReque
 }
 
 func (a *k8sAPI) DeletePod(ctx context.Context, req *k8sapiv1.DeletePodRequest) (*k8sapiv1.DeletePodResponse, error) {
-	err := a.k8s.DeletePod(ctx, req.Clientset, req.Cluster, req.Namespace, req.Name)
-	if err != nil {
-		return nil, err
-	}
+	//err := a.k8s.DeletePod(ctx, req.Clientset, req.Cluster, req.Namespace, req.Name)
+	//if err != nil {
+	//	return nil, err
+	//}
 	return &k8sapiv1.DeletePodResponse{}, nil
 }
